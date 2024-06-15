@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "chista0x",
+  "risk": "2",
+  "title": "Incorrect Division Factor in UniswapV3Oracle in the `peek` function",
+  "issueId": 32,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/32"
+}

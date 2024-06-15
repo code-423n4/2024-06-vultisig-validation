@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Chuch",
+  "risk": "2",
+  "title": "[M-03] - Missing approve to zero allowance first in `Vultisig::approveAndCall`",
+  "issueId": 18,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/18"
+}

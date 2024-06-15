@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "iam_emptyset",
+  "risk": "3",
+  "title": "MEV attack is possible to initILOPool function",
+  "issueId": 16,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/16"
+}

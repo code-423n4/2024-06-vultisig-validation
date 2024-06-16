@@ -57,6 +57,7 @@ Remove the option of using an already existing Uniswap pool.
 
 Griefing
 
+---
 
 # 3. Incorrect vestConfig end parameter validation
 
@@ -77,3 +78,28 @@ Add condition ` require(schedule[i].start < schedule[i].end, "VT");`
 ## Assessed type
 
 Incorrect input validation.
+
+---
+
+# 4. claim funciton is payable, but payable functionality is not used anywhere in the function
+
+https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOPool.sol#L184-L190
+
+The claim function is currently marked as payable without a justifiable reason, potentially leading to unnecessary or unintended Ether transfers to the contract. This can cause confusion and unintended behavior, as users might believe that sending Ether is required or expected when calling this function.
+
+
+```solidity
+  function claim(uint256 tokenId)
+        external
+        payable
+        override
+        isAuthorizedForToken(tokenId)
+        returns (uint256 amount0, uint256 amount1)
+```
+
+## Recommended Mitigation Steps
+Remove payable modificator for `claim` function.
+
+## Assessed type
+
+Incorrect validation.

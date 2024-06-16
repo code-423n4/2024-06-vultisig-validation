@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Kaysoft",
+  "risk": "2",
+  "title": "Possible griefing attack on the `initILOPool(...)` function due to how `Clones.cloneDeterministic(...)` function is used.",
+  "issueId": 45,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/45"
+}

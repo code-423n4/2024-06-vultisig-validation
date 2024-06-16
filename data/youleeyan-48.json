@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "youleeyan",
+  "risk": "2",
+  "title": "Wrong initialPoolPriceX96 upper tick comparison",
+  "issueId": 48,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/48"
+}

@@ -1,3 +1,7 @@
+# 1. Setting launchtime in the past could lead to unexpected behaviour
+
+https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOManager.sol#L58
+
 The initProject function in the ILOManager allows the initialization of a project with a launch time parameter. However, the current implementation contains a bug where it is possible to initialize a project with a launchTime that is set in the past. This can lead to unexpected behavior and potential exploitation.
 
 
@@ -12,3 +16,44 @@ The initProject function in the ILOManager allows the initialization of a projec
         emit ProjectCreated(uniV3PoolAddress, _cachedProject[uniV3PoolAddress]);
     }
 ```
+
+## Recommended Mitigation Steps
+Add block.timestamp validation to launchTime parameter.
+
+## Assessed type
+
+Input validation.
+
+---
+
+# 2. The initialization of a project with an already existing Uniswap pool can be blocked.
+
+https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOManager.sol#L114-L122
+
+The initProject function in the contract is susceptible to griefing vulnerability due to the manipulable nature of its parameter data. Malicious actors can exploit this vulnerability by copying parameter data from mempool transactions, enabling them to become administrators of existing Uniswap pools without authorization. This unauthorized access could lead to launching project with the uniswap pool created by another user. Malicious user can potentially block one or several specific users from being able to initiate a project with any existing pool by copying their transaction data and frontrunning them.
+
+```solidity
+   function _initUniV3PoolIfNecessary(PoolAddress.PoolKey memory poolKey, uint160 sqrtPriceX96) internal returns (address pool) {
+        pool = IUniswapV3Factory(UNIV3_FACTORY).getPool(poolKey.token0, poolKey.token1, poolKey.fee);
+        if (pool == address(0)) {
+            pool = IUniswapV3Factory(UNIV3_FACTORY).createPool(poolKey.token0, poolKey.token1, poolKey.fee);
+            IUniswapV3Pool(pool).initialize(sqrtPriceX96);
+condition for existing pools @>     } else {
+            (uint160 sqrtPriceX96Existing, , , , , , ) = IUniswapV3Pool(pool).slot0();
+            if (sqrtPriceX96Existing == 0) {
+                IUniswapV3Pool(pool).initialize(sqrtPriceX96);
+            } else {
+                require(sqrtPriceX96Existing == sqrtPriceX96, "UV3P");
+            }
+        }
+    }
+
+```
+
+## Recommended Mitigation Steps
+Remove the option of using an already existing Uniswap pool.
+
+
+## Assessed type
+
+Griefing

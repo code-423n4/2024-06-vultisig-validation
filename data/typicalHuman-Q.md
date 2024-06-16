@@ -53,7 +53,27 @@ condition for existing pools @>     } else {
 ## Recommended Mitigation Steps
 Remove the option of using an already existing Uniswap pool.
 
-
 ## Assessed type
 
 Griefing
+
+
+# 3. Incorrect vestConfig end parameter validation
+
+https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/base/ILOVest.sol#L43-L44
+
+The current implementation of the code fails to validate that the end parameter of a schedule is greater than the start parameter. This oversight allows for the creation of schedules where the end time can be less than the start time, which is logically incorrect and can lead to various issues in the scheduling functionality.
+
+ILOVest.sol#L43-L44:
+```solidity
+require(schedule[i].start >= lastEnd, "VT");
+lastEnd = schedule[i].end;
+```
+
+
+## Recommended Mitigation Steps
+Add condition ` require(schedule[i].start < schedule[i].end, "VT");`
+
+## Assessed type
+
+Incorrect input validation.

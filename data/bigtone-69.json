@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "bigtone",
+  "risk": "3",
+  "title": "After launchSucceed, calling the buy function in ILOPool can lead to funds being locked in the contract",
+  "issueId": 69,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/69"
+}

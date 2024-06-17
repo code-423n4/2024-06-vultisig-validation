@@ -13,3 +13,9 @@ Vultisig uses `approve` that do not handle non standard erc20 tokens like
 https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/hardhat-vultisig/contracts/Vultisig.sol#L18
 ## Recommendation 
 Use Solmate safeApprove which handles this case
+
+# [L-03] Hardcoded TWAP interval
+Although having 30min if twap interval is a fine duration, since the cost of twap manipulation will also increase with time. But with known duration a manipulation attack can be carried out without having any way to change the duration.
+https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/hardhat-vultisig/contracts/oracles/uniswap/UniswapV3Oracle.sol#L16
+## Recommendation 
+Dont hardcode it and have a function for changing the duration

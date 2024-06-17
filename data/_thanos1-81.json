@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "_thanos1",
+  "risk": "3",
+  "title": "The `ILOPool` contract will not get initialized ",
+  "issueId": 81,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/81"
+}

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Chuch",
+  "risk": "3",
+  "title": "On-chain price calculation using `slot0` can be suceptible to manipulation ",
+  "issueId": 91,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/91"
+}

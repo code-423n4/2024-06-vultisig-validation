@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "0xE1",
+  "risk": "2",
+  "title": "Ownable contract not initialised",
+  "issueId": 93,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/93"
+}

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "bigtone",
+  "risk": "2",
+  "title": "Missing validation check to ensure that launchTime is greater than block.timestamp in the initProject function ",
+  "issueId": 88,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/88"
+}

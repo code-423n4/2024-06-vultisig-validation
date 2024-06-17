@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Chinmay",
+  "risk": "2",
+  "title": "Address blacklist is ineffective if self-whitelisting has been enabled",
+  "issueId": 64,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/64"
+}

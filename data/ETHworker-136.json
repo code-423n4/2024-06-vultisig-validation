@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "ETHworker",
+  "risk": "3",
+  "title": "Incorrect ETH Estimation in Vultisig's Whitelist Contract Leading to Whitelist Bypass",
+  "issueId": 136,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/136"
+}

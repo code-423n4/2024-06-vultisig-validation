@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Pelz",
+  "risk": "3",
+  "title": " Critical Initialization Flaw in ILOPool.sol Prevents Contract Functionality",
+  "issueId": 127,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/127"
+}

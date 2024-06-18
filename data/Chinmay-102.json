@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Chinmay",
+  "risk": "3",
+  "title": "Incorrect TWAP price returned by UniswapV3Oracle.sol",
+  "issueId": 102,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/102"
+}

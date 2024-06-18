@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "jeremie",
+  "risk": "2",
+  "title": "Doesn't check launchTime, allowing to buy after the launch.",
+  "issueId": 116,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/116"
+}

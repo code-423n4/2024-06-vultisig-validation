@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "ETHworker",
+  "risk": "3",
+  "title": "VUltisig Whitelist Bypass Due to Incorrect Check for Uniswap V3 Pool Interactions and Potential Owner Manipulation",
+  "issueId": 109,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/109"
+}

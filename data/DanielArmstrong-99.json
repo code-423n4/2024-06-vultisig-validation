@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "DanielArmstrong",
+  "risk": "2",
+  "title": "`ILOManager.sol#initILOPool` function has error on validating initial pool price.",
+  "issueId": 99,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/99"
+}

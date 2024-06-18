@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "nnez",
+  "risk": "3",
+  "title": "Adversaries can front-run initProject function to prevent actual project's owner from launching ILO with the protocol",
+  "issueId": 106,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/106"
+}

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "excalibor",
+  "risk": "2",
+  "title": "ILOPool can never be launched if project admin doesnt transfer tokens to the pool",
+  "issueId": 118,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/118"
+}

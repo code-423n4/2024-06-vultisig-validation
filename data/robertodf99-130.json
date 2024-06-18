@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "robertodf99",
+  "risk": "2",
+  "title": "Missing check for correct pool intialization allows project admin to intialize pool with incorrect price range",
+  "issueId": 130,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/130"
+}

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "araj",
+  "risk": "3",
+  "title": "SALE_TOKEN is not transfered to ILOPool while creating new pool",
+  "issueId": 121,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/121"
+}

@@ -7,3 +7,4 @@ Add checks to be sure there is no division to zero.
 
 ## Description
 `delete _positionVests[tokenId];` will not delete schedule array values
+

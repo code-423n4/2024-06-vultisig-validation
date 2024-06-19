@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Rhaydden",
+  "risk": "2",
+  "title": "Refund logic flaw in `_refundProject` function leads to excessive token transfer to project admin due to incorrect calculation of refund amount based on total `SALE_TOKEN` balance instead of tokens sold",
+  "issueId": 141,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/141"
+}

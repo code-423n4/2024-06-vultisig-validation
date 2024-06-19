@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Bluedragon101",
+  "risk": "2",
+  "title": "Multisig Wallets Cannot Get White-listed Due to the `transfer()` Function Gas Constraint",
+  "issueId": 188,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/188"
+}

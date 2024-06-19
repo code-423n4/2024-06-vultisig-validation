@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "MSaptarshi",
+  "risk": "2",
+  "title": "Lack of expiration timestamp step check in launch",
+  "issueId": 162,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/162"
+}

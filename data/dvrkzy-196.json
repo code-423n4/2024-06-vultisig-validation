@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "dvrkzy",
+  "risk": "2",
+  "title": "`TickMath.sol` and `FullMath.sol` don't use unchecked.",
+  "issueId": 196,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/196"
+}

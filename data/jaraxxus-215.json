@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "jaraxxus",
+  "risk": "2",
+  "title": "Cloned pools will be affected if the implementation is initialized",
+  "issueId": 215,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/215"
+}

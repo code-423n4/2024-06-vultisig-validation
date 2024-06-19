@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Joshuajee",
+  "risk": "2",
+  "title": "Use call() instead of transfer() when transferring ETH in Whitelist.sol",
+  "issueId": 201,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/201"
+}

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Naresh",
+  "risk": "2",
+  "title": "Implementations of clones could be metamorphic and lead to exploit",
+  "issueId": 156,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/156"
+}

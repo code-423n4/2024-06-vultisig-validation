@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "0xHarryBarz",
+  "risk": "2",
+  "title": "Funds can be stuck in the contract if the project didn't launch and tries to call the claimRefund through the onlyProjectAdmin due to  DOS",
+  "issueId": 214,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/214"
+}

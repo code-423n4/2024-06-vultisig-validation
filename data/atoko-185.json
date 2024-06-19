@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "atoko",
+  "risk": "2",
+  "title": "Potential DoS via Out of Gas in Nested For Loops",
+  "issueId": 185,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/185"
+}

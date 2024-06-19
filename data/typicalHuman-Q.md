@@ -1,4 +1,4 @@
-# 1. Setting launchtime in the past could lead to unexpected behaviour
+# L-01. Setting launchtime in the past could lead to unexpected behaviour
 
 https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOManager.sol#L58
 
@@ -26,7 +26,7 @@ Input validation.
 
 ---
 
-# 2. The initialization of a project with an already existing Uniswap pool can be blocked.
+# L-02. The initialization of a project with an already existing Uniswap pool can be blocked.
 
 https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOManager.sol#L114-L122
 
@@ -59,7 +59,7 @@ Griefing
 
 ---
 
-# 3. Incorrect vestConfig end parameter validation
+# L-03. Incorrect vestConfig end parameter validation
 
 https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/base/ILOVest.sol#L43-L44
 
@@ -81,7 +81,7 @@ Incorrect input validation.
 
 ---
 
-# 4. claim funciton is payable, but payable functionality is not used anywhere in the function
+# L-04. claim funciton is payable, but payable functionality is not used anywhere in the function
 
 https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOPool.sol#L184-L190
 

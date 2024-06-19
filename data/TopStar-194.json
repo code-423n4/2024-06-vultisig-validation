@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "TopStar",
+  "risk": "2",
+  "title": "`PeripheryPayments::pay()` could fail due to `transfer()` method",
+  "issueId": 194,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/194"
+}

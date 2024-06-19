@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Rhaydden",
+  "risk": "2",
+  "title": "Newly minted positions lack initialized fee growth values, leading to incorrect fee calculations during token claims",
+  "issueId": 139,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/139"
+}

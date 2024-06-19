@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Svetoslavb",
+  "risk": "2",
+  "title": "[M-01] Out-of-range ILOPool can be created, leading to an inactive liquidity position",
+  "issueId": 144,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/144"
+}

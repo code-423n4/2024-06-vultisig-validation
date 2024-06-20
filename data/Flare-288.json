@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Flare",
+  "risk": "2",
+  "title": "Zero amount transfer may cause a denial of service.",
+  "issueId": 288,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/288"
+}

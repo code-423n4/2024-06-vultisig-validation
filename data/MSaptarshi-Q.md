@@ -27,7 +27,7 @@ Don't hardcode it and have a function for changing the duration
 
 # [L-04] Hardcoded Slippage parameters
 ## Impact
-In times of high market volatality like UST/LUNA crash users may be able to transfer out their exact required amount due to the hardcoded slippage
+In times of high market volatality like UST/LUNA crash users may not be able to transfer out their exact required amount due to the hardcoded slippage
 https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/hardhat-vultisig/contracts/oracles/uniswap/UniswapV3Oracle.sol#L45
 ## Recommendation
 Instead of hardcoding it let it be user specified or set/change upto a certain percentage by some trusted entity 

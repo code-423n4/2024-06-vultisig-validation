@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Flare",
+  "risk": "2",
+  "title": " The `LiquidityAmounts.sol` library does not implements uniswapV3's main functions",
+  "issueId": 295,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/295"
+}

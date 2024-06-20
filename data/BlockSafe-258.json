@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "BlockSafe",
+  "risk": "2",
+  "title": " Incomplete Specification of Token Amounts in Uniswap V3 Liquidity Provisioning Leads to Potential Price Manipulation",
+  "issueId": 258,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/258"
+}

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Bauchibred",
+  "risk": "2",
+  "title": "A subtle invariant is broken in regards to the immutability of both the platform and performance fee across protocol's project pools",
+  "issueId": 311,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/311"
+}

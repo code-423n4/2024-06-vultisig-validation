@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Utsav",
+  "risk": "3",
+  "title": "Pool launch will revert while adding liquidity to uniswap due to lack of sale token",
+  "issueId": 271,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/271"
+}

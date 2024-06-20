@@ -31,6 +31,22 @@ So when we create a new pool then we have to send sqrtPriceX96 value greater the
 
 So it's impossible to set a sqrtPriceX96 of a existing Pool, so we can remove that functionality
 
+## Proof of Concept
+Run this test, it will fail when we set sqrtPriceX96 = 0
+```javascript
+function testInitProject() external {
+         address pool = iloManager.initProject(
+         IILOManager.InitProjectParams({
+               saleToken: address(1),
+               raiseToken: address(2),
+               fee: 10000,
+               initialPoolPriceX96: 0,
+               launchTime: mockProject().launchTime
+           })
+       );
+     }
+```
+
 ## Recommended Mitigation 
 ```diff
     function _initUniV3PoolIfNecessary(PoolAddress.PoolKey memory poolKey, uint160 sqrtPriceX96)

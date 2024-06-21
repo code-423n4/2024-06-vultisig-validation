@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "_karanel",
+  "risk": "2",
+  "title": "`ILOPool::claim` is payable and can cause locking of `ETH`",
+  "issueId": 463,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/463"
+}

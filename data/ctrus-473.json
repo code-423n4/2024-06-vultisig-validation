@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "ctrus",
+  "risk": "3",
+  "title": "Use safeTransfer instead of transfer",
+  "issueId": 473,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/473"
+}

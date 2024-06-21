@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "tobi0x18",
+  "risk": "3",
+  "title": "A project can't be initialized if `saleToken/raiseToken` pool is created earlier",
+  "issueId": 487,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/487"
+}

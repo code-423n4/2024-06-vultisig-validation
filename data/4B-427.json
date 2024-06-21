@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "4B",
+  "risk": "2",
+  "title": "use OwnerUpgradeable instead of ownable",
+  "issueId": 427,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/427"
+}

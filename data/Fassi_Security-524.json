@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Fassi_Security",
+  "risk": "2",
+  "title": "Muldiv will fail if performancefee is set to 0",
+  "issueId": 524,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/524"
+}

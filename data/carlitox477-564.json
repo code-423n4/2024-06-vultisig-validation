@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "carlitox477",
+  "risk": "2",
+  "title": "`Vultisig.approveAndCall(address,uint256,bytes)` is susceptible to gas griefing",
+  "issueId": 564,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/564"
+}

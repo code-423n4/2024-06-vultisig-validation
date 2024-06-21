@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "bareli",
+  "risk": "2",
+  "title": "wrong implement of \"_disableInitialize()\"  in initializable.sol",
+  "issueId": 582,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/582"
+}

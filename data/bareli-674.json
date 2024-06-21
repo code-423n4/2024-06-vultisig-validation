@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "bareli",
+  "risk": "2",
+  "title": "Use safeMint instead of mint for ERC721",
+  "issueId": 674,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/674"
+}

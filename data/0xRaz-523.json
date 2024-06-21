@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "0xRaz",
+  "risk": "3",
+  "title": "VultisigWhitelisted Contract Vulnerable to Whitelist Bypass",
+  "issueId": 523,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/523"
+}

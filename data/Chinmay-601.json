@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Chinmay",
+  "risk": "2",
+  "title": "Liquidity claims can get DOS'ed if feeTaker address gets blacklisted",
+  "issueId": 601,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/601"
+}

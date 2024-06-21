@@ -1,6 +1,6 @@
 # QA Report: Vultisig
 
-## L-01: Absence of Address Removal Functionality in Whitelist and Blacklist Management with Dynamic List Management Impact
+## L-01: Absence of Address Removal Functionality in Whitelist and Blacklist
 
 ## Impact
 The lack of functionality to remove addresses from the whitelist and blacklist restricts the dynamic management of these lists, potentially impacting the adaptability and security of the contract. Without the ability to remove addresses, the contract cannot adjust to changing conditions or rectify erroneous additions, which may lead to inefficient or unsafe contract operations. This could hinder the contract's ability to respond to evolving security threats or operational requirements, leading to possible stagnation of the whitelist/blacklist and misuse of the contract functionality.

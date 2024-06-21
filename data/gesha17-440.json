@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "gesha17",
+  "risk": "3",
+  "title": "Vultisig whitetoken functionality applies to ILOPool and will eventualy DoS the claim() function of ILOPool contract",
+  "issueId": 440,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/440"
+}

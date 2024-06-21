@@ -1,21 +1,4 @@
-# [01] User can use whitlisted address to buy more NFTs for other wallets
-
-`ILOPool::buy` has a check to see if the recipient wallet is whitelisted and also has an nft already:
-
-https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOPool.sol#L143
-
-```javascript
-       if (balanceOf(recipient) == 0) {..}
-```
-
-## Impact
-A user can decide to make it's first `buy` and after transfer out the `NFT` to another wallet and then proceed to purchase the second buy which will game the whitelist and buy for his friend as the `check` won't find any nft in the `recipient` address.
-
-
-## Recommended Mitigation Steps
-Create an internal accounting of the NFTs to the recipients. or use `ownerOf` instead of `balanceOf`
-
-# [02] Use of one step transfer for critical privileges instead of a two step process and also lack of zero address check
+# [01] Use of one step transfer for critical privileges instead of a two step process and also lack of zero address check
 
 `owner` has critical privilages in the protocol. `ILOManager::transferAdminProject` allows the `owner` to transfer ownership (and associated critical privilages) in a one-step process.
 
@@ -82,14 +65,14 @@ contract ILOManager {
 }
 ```
 
-# [03] No event emissions for critical state changes in `ILOManager::setPlatformFee` and `ILOManager::setPerformanceFee`
+# [02] No event emissions for critical state changes in `ILOManager::setPlatformFee` and `ILOManager::setPerformanceFee`
 
 `ILOManager::setPlatformFee` and `ILOManager::setPerformanceFee` modify critical state variables, but no events are defined and emitted to broadcast the changes.
 
 ## Impact
 
 1. Reduced transparency
-2. Difficulty to track changes
+2. Difficulty in tracking changes
 3. Inefficient or impossible integration with other contracts and services
 
 
@@ -122,9 +105,9 @@ contract ILOManager {
 }
 ```
 
-# [04] `ILOPool::buy` accepts `zero value` as a valid value for `raiseAmount`
+# [03] `ILOPool::buy` accepts `zero value` as a valid value for `raiseAmount`
 
-`ILOPool::buy` accepts `zero value` as a valid value for the `raiseAmount` does not perform input validation on `raiseAmount`. Transaction flow will continue and only fails much later in the execution. 
+`ILOPool::buy` accepts `zero value` as a valid value for the `raiseAmount` does not perform input validation on `raiseAmount`. Transaction flow will continue and only fail much later in the execution. 
 
 ## Impact 
 Users calling `ILOPool::buy` and accidentally inputting `0` for `raiseAmount` will waste more gas, as the transaction will fail much later in the execution.

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Atharv",
+  "risk": "3",
+  "title": "Potential DoS Vulnerability in Uniswap v3 Pool Initialization",
+  "issueId": 371,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/371"
+}

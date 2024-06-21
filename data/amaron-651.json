@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "amaron",
+  "risk": "3",
+  "title": "`ILOManager::initProject` can be frontrunned by a malicious user, which might make the entire protocol unusable, and can cause loss of funds.",
+  "issueId": 651,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/651"
+}

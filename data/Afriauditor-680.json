@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Afriauditor",
+  "risk": "2",
+  "title": "Vulnerability in Enforcing _maxAddressCap Due to Front-Running",
+  "issueId": 680,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/680"
+}

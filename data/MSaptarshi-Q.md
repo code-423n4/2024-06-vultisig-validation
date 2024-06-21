@@ -31,3 +31,12 @@ In times of high market volatality like UST/LUNA crash users may not be able to 
 https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/hardhat-vultisig/contracts/oracles/uniswap/UniswapV3Oracle.sol#L45
 ## Recommendation
 Instead of hardcoding it let it be user specified or set/change upto a certain percentage by some trusted entity 
+
+# [L-05] Lack of validation of create2 return value
+## Impact
+`initILOPool` function is used to deploy lightweight proxy contracts that act as corresponding to a uniswap pool. The function does not revert properly if there is a failed contract deployment or revert from the create2 opcode as it does not properly check the returned address for bytecode. The create2 opcode returns the expected address which will never be the zero address (as is what is currently checked in [here](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/442886ed5ff8a0b9ab477b191f5238541ee6d772/contracts/proxy/Clones.sol#L87).
+
+https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOManager.sol#L84
+
+## Recommendation
+Have a check for `iszero(extcodesize(result))` for `iloPoolAddress`

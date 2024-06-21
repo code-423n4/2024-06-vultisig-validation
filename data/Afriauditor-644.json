@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Afriauditor",
+  "risk": "3",
+  "title": "Front-Running Vulnerability in initProject in ILOmanager Causing Project unable to use ILO Pool",
+  "issueId": 644,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/644"
+}

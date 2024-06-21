@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Maushish",
+  "risk": "2",
+  "title": "Current PERIOD implementation could lead to swapping scenario where user could swap at an inflation rate.",
+  "issueId": 499,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/499"
+}

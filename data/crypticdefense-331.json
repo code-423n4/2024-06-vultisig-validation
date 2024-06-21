@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "crypticdefense",
+  "risk": "3",
+  "title": "Attacker may be able to drain pool funds due to missing check if `liquidity2Claim > 0`",
+  "issueId": 331,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/331"
+}

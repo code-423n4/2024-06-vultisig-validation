@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "ni8mare",
+  "risk": "3",
+  "title": "`initProject` is prone to Denial-Of-Service attacks, preventing users from creating new projects",
+  "issueId": 633,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/633"
+}

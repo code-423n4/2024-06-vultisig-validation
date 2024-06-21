@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "gesha17",
+  "risk": "2",
+  "title": "Malicios user can frontrun call to initProject and cause honest transactions to create a project revert. A party with enough funds can DoS an ILO launch.",
+  "issueId": 410,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/410"
+}

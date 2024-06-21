@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "jolah1",
+  "risk": "2",
+  "title": "Use `address.call{value:x}()` instead of `payable.transfer()`.",
+  "issueId": 449,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/449"
+}

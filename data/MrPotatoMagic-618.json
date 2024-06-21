@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "MrPotatoMagic",
+  "risk": "2",
+  "title": "Initializing an ILO pool will always revert",
+  "issueId": 618,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/618"
+}

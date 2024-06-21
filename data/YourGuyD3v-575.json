@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "YourGuyD3v",
+  "risk": "2",
+  "title": "Missing virtual Keyword in VultisigWhitelisted::_beforeTokenTransfer Override as per the Rules of Hooks",
+  "issueId": 575,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/575"
+}

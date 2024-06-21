@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "UniswapV3 Oracle Misidentifies Oldest Observation During Pool Expansion",
+  "issueId": 594,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/594"
+}

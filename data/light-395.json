@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "light",
+  "risk": "2",
+  "title": "Non-whitelisted user may buy a position if whitelist is implemented after sale start",
+  "issueId": 395,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/395"
+}

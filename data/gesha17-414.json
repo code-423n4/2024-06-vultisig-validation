@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "gesha17",
+  "risk": "2",
+  "title": "User / fee taker blacklisted by token will temporarily prevent fees from being collected for the protocol",
+  "issueId": 414,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/414"
+}

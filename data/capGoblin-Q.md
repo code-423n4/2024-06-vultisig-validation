@@ -267,28 +267,7 @@ function launch() external override OnlyManager() {
 ## Recommended Mitigation: 
 Use `_safeMint()` instead of `_mint()` for ERC721.
 
-## [L-04] Critical Changes Should Use Two-Step Procedure
-`owner` has critical privileges in the protocol. Multiple Functions in `ILOManager`, `WhiteList` and `VultigWhitelisted`. Where the protocol might become the victim of a Clipboard Replacement Attack, where the owner copies the address that does critical changes to the protocol, but malware replaces the address on the clipboard with a different attacker-controlled address. 
-
-https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOManager.sol#L150-L184
-https://github.com/code-423n4/2024-06-vultisig/blob/main/hardhat-vultisig/contracts/Whitelist.sol#L136-L195
-https://github.com/code-423n4/2024-06-vultisig/blob/main/hardhat-vultisig/contracts/extensions/VultisigWhitelisted.sol#L22-L24
-
-## Recommended Mitigation:
-Lack of two-step procedure for critical operations leaves them error-prone. Consider adding two step procedure on the critical functions.
-
-## [L-05] Missing Input validations
-Ensure proper input validation and zero value checks are implemented in `constructor` for `UniswapV3Oracle` where `pool` is direcly used in `OracleLibrary.getOldestObservationSecondsAgo` without any validations. Also in `initialize` in `ILOPool` and `initProject`, `initialize` in `ILOManager`.
-
-https://github.com/code-423n4/2024-06-vultisig/blob/main/hardhat-vultisig/contracts/oracles/uniswap/UniswapV3Oracle.sol#L27-L31
-https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOPool.sol#L61-L103
-https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOManager.sol#L33-L49
-https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOManager.sol#L57-L69
-
-## Recommended Mitigation:
-Ensure that every function validates its inputs against invalid or zero values. Use `require` or using if Statements with `revert` like `revert ZeroValue()`, and `revert ZeroAddress()` effectively to check conditions before executing any logic.
-
-## [L-06] Use Openzepplin's `Ownable2Step` instead of `Ownable` for the transfer of ownership
+## [L-04] Use Openzepplin's `Ownable2Step` instead of `Ownable` for the transfer of ownership
 To enhance the security of ownership transfer in your Solidity contract, it's advisable to use OpenZeppelin's Ownable2Step pattern instead of Ownable. In `ILOManager` the `initialize` and `constructor` where `transferOwnership` is used. Here can use `Ownable2Step::transferOwnership`. This adds an extra layer of security by requiring confirmation from the new owner before finalizing the transfer
 
 https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOManager.sol#L29-L49
@@ -323,6 +302,28 @@ contract ILOManager is IILOManager, Ownable2Step, Initializable {
   ...
 }
 ```
+
+## [L-05] Missing Input validations
+Ensure proper input validation and zero value checks are implemented in `constructor` for `UniswapV3Oracle` where `pool` is direcly used in `OracleLibrary.getOldestObservationSecondsAgo` without any validations. Also in `initialize` in `ILOPool` and `initProject`, `initialize` in `ILOManager`.
+
+https://github.com/code-423n4/2024-06-vultisig/blob/main/hardhat-vultisig/contracts/oracles/uniswap/UniswapV3Oracle.sol#L27-L31
+https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOPool.sol#L61-L103
+https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOManager.sol#L33-L49
+https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOManager.sol#L57-L69
+
+## Recommended Mitigation:
+Ensure that every function validates its inputs against invalid or zero values. Use `require` or using if Statements with `revert` like `revert ZeroValue()`, and `revert ZeroAddress()` effectively to check conditions before executing any logic.
+
+## [L-06] Critical Changes Should Use Two-Step Procedure
+`owner` has critical privileges in the protocol. Multiple Functions in `ILOManager`, `WhiteList` and `VultigWhitelisted`. Where the protocol might become the victim of a Clipboard Replacement Attack, where the owner copies the address that does critical changes to the protocol, but malware replaces the address on the clipboard with a different attacker-controlled address. 
+
+https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOManager.sol#L150-L184
+https://github.com/code-423n4/2024-06-vultisig/blob/main/hardhat-vultisig/contracts/Whitelist.sol#L136-L195
+https://github.com/code-423n4/2024-06-vultisig/blob/main/hardhat-vultisig/contracts/extensions/VultisigWhitelisted.sol#L22-L24
+
+## Recommended Mitigation:
+Lack of two-step procedure for critical operations leaves them error-prone. Consider adding two step procedure on the critical functions.
+
 ## [L-07] Incomplete NatSpec comments
 Some of the functions have missing or incomplete Ethereum Natural Specification Format (NatSpec) comments. 
 - `compute` function in `PositionKey.sol`

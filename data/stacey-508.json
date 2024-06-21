@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "stacey",
+  "risk": "2",
+  "title": "M-2 Anyone can call the `launch(address uniV3PoolAddress)` function.",
+  "issueId": 508,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/508"
+}

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "kodyvim",
+  "risk": "2",
+  "title": "Incorrect vestingConfig initialisation when lauching pool",
+  "issueId": 360,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/360"
+}

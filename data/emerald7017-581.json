@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "Unsolicited ETH Transfer in Whitelist Function can Lead to Whitelisted Abusers and Lost Funds",
+  "issueId": 581,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/581"
+}

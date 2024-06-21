@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "0xR360",
+  "risk": "3",
+  "title": "frontrunning every call to \"initProject\" will avoid any creator from using it",
+  "issueId": 493,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/493"
+}

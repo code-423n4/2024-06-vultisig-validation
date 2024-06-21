@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "YouRaiseMeUp",
+  "risk": "3",
+  "title": "The `checkWhitelist` function is not functioning correctly.",
+  "issueId": 321,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/321"
+}

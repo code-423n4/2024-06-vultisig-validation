@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "rbserver",
+  "risk": "2",
+  "title": "`ILOManager.launch` function is callable by anyone, which breaks invariant that only project admin should be allowed to launch project and all of its ilo pools",
+  "issueId": 526,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/526"
+}

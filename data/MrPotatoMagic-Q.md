@@ -141,3 +141,26 @@ File: Whitelist.sol
 184:         _isBlacklisted[blacklisted] = flag;
 185:     }
 ```
+
+## [L-07] Initialize missing access control
+
+In ILOManager.sol, initialize() function below missing access control i.e. only current owner should be able to call it.
+```solidity
+    function initialize(
+        address initialOwner,
+        address _feeTaker,
+        address iloPoolImplementation,
+        address uniV3Factory,
+        address weth9,
+        uint16 platformFee,
+        uint16 performanceFee
+    ) external override whenNotInitialized() {
+        PLATFORM_FEE = platformFee; 
+        PERFORMANCE_FEE = performanceFee;
+        FEE_TAKER = _feeTaker;
+        transferOwnership(initialOwner);
+        UNIV3_FACTORY = uniV3Factory;
+        ILO_POOL_IMPLEMENTATION = iloPoolImplementation;
+        WETH9 = weth9;
+    }
+```

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "air_0x",
+  "risk": "3",
+  "title": "Calling the claim function with multiple ETH deposits will use the same msg.value many times",
+  "issueId": 549,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/549"
+}

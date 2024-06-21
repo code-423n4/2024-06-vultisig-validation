@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Tigerfrake",
+  "risk": "3",
+  "title": "Incomplete Fee Deduction in `claim()` Function",
+  "issueId": 407,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/407"
+}

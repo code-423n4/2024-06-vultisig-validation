@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Topmark",
+  "risk": "3",
+  "title": "Wrong Total Liquidity Locked for Vest is Updated When Investor buys ILO after Claim has been Initially Made in Contract",
+  "issueId": 347,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/347"
+}

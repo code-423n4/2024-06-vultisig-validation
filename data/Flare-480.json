@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Flare",
+  "risk": "3",
+  "title": "Anyone cannot `claimRefund` due to incorrect assumption of `refundDeadline`.",
+  "issueId": 480,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/480"
+}

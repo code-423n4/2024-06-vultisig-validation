@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "Inaccurate Token Unit Conversion in Whitelist.sol Leads to Miscalculated ETH Value",
+  "issueId": 583,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/583"
+}

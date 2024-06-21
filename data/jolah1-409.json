@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "jolah1",
+  "risk": "2",
+  "title": "`initILOPool()` may cause front-running griefing attack on NFT creations.",
+  "issueId": 409,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/409"
+}

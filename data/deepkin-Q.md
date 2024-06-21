@@ -27,3 +27,9 @@ This **refundDeadline** important for ILOPool, because it shows is anyone eligib
 ## ILOPool **claim()** don't require payable modificator.
 Because don't work with eth but still it can bring an issue for user who can send eth that will stuck there forever.
 https://github.com/code-423n4/2024-06-vultisig/blob/main/src/interfaces/IILOPool.sol#L101
+
+## There is a mistake in contest description about how ILOPools can be launched:
++ iloPool can only launch from manager. **only project admin can launch project(aka launch all ilo pool)**
++ **Anyone can launch pool when all condition met.**
+
+So, basically second one is true from the code perspective https://github.com/code-423n4/2024-06-vultisig/blob/main/src/ILOManager.sol#L187-L198

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Fassi_Security",
+  "risk": "2",
+  "title": "User can frontrun launch by claimrefund whenever an L2 pauses",
+  "issueId": 535,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/535"
+}

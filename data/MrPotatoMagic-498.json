@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "MrPotatoMagic",
+  "risk": "2",
+  "title": "Attacker can make 0 msg.value receive() function calls to spam the whitelist",
+  "issueId": 498,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/498"
+}

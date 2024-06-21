@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "amaron",
+  "risk": "2",
+  "title": "Specific numbers of `_vestingConfigs.length` and `projectConfig.schedule.length` might make a project unlaunchable",
+  "issueId": 657,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/657"
+}

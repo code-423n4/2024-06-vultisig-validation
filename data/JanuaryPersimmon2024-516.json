@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "JanuaryPersimmon2024",
+  "risk": "3",
+  "title": "If the admin gets blacklisted by the SALE_TOKEN token (like if USDC/USDT tokens are used), the whole launch process for all ILOPools of a particular pool key will be DoS'ed",
+  "issueId": 516,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/516"
+}

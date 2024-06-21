@@ -18,3 +18,25 @@ In the constructor set `_isSelfWhitelistDisabled` to true.
 +       _isSelfWhitelistDisabled = true;
     }
 ```
+
+## `Whitelist::_addWhitelistedAddress` Is Marked As Private Not Internal
+
+## Description
+`ILOManager::initialize` natspec states the following indicating improper visibility set -
+```
+    /// @notice Internal function used for whitelisting. Only increase whitelist count if address is not whitelisted before
+    /// @param whitelisted Address to be added
+    function _addWhitelistedAddress(address whitelisted) private {
+        ....
+    }
+```
+
+## Recommended Mitigation
+Simply swap `private` to `internal`
+```diff
+-    function _addWhitelistedAddress(address whitelisted) private {
++    function _addWhitelistedAddress(address whitelisted) internal {
+
+        ....
+    }
+```

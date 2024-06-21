@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Stoicov",
+  "risk": "2",
+  "title": "initProject() can be DOSed if the project is for existing UniV3 pool",
+  "issueId": 453,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/453"
+}

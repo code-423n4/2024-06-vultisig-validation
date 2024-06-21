@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Spearmint",
+  "risk": "3",
+  "title": "An attacker can frontrun `initProject()` by directly deploying/manipulating the uniswapV3 pool to DOS `initProject()`",
+  "issueId": 390,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/390"
+}

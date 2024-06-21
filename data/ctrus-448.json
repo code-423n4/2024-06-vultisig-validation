@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "ctrus",
+  "risk": "2",
+  "title": "Possible DOS in `launch()` and `claimRefund()` functions because unbounded loop can run out of gas.",
+  "issueId": 448,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/448"
+}

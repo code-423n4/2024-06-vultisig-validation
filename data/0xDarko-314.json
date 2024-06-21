@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "0xDarko",
+  "risk": "2",
+  "title": "Missing Percentage Checks on `ILOManager::setPlatformFee` & `ILOManager::setPerformanceFee`",
+  "issueId": 314,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/314"
+}

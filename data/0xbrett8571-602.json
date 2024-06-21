@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "0xbrett8571",
+  "risk": "2",
+  "title": " Flawed Refund Logic in ILOPool Launch Risks Excessive SALE_TOKEN Transfer to Project Admin",
+  "issueId": 602,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/602"
+}

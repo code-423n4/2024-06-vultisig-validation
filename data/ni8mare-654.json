@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "ni8mare",
+  "risk": "2",
+  "title": "Lack of a rebalance function makes an ILOPool miss out on potential fees from Uniswap.",
+  "issueId": 654,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/654"
+}

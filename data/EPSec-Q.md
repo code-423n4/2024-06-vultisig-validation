@@ -1004,3 +1004,7 @@ The blog post outlines crucial strategies for enhancing the security and reliabi
 
 ## Recommended Mitigation Steps
 Implement the recommended techniques from the blog post. These steps can significantly reduce the likelihood of errors and improve the overall robustness of your smart contract.
+
+## Informational-08: Claim function is payable in the interface
+
+`IILOPool::claim` is declared as payable in the interface, but in the implementation is not payable, which is the expected behaviour stated by team. Consider removing the payable keyword from the interface.

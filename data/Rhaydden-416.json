@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Rhaydden",
+  "risk": "3",
+  "title": "Potential ETH Lockup in Whitelist Contract Due to Insufficient Gas Forwarding with `transfer()`",
+  "issueId": 416,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/416"
+}

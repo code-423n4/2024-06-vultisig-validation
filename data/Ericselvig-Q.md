@@ -7,6 +7,7 @@
 | [L-01](#l-01-functions-in-ilomanagersol-are-lacking-important-checks)         | Functions in `ILOManager.sol` are lacking important checks          |
 | [L-02](#l-02-wrong-natspec-comments-in-ilomanagersol)                         | Wrong natspec comments in `ILOManager.sol`                          |
 | [L-03](#l-03-use-two-step-transfer-process-in-ilomanagertransferadminproject) | Use two-step transfer process in `ILOManager::transferAdminProject` |
+| [L-04](#l-04-ilopoolclaim-should-not-be-payable)                              | `ILOPool::claim` should not be payable       
 
 ## [L-01] Functions in `ILOManager.sol` are lacking important checks
 
@@ -65,3 +66,22 @@ https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff37635
 
 A project admin is responsible for executing functions crutial to the project like `ILOManager::initILOPool` and `ILOManager::claimRefund`.
 Using a two-step transfer process will help prevent a project admin from accidentally transferring admin rights to an unintended address.
+
+## [L-04] `ILOPool::claim` should not be payable
+
+https://github.com/code-423n4/2024-06-vultisig/blob/cb72b1e9053c02a58d874ff376359a83dc3f0742/src/ILOPool.sol#L186
+
+The `ILOPool::claim` function does not expect to receive any ETH. Any ETH sent accidently with this function call will be locked permanently.
+
+```js
+file: src/ILOPool.sol
+
+    function claim(uint256 tokenId)
+        external
+@>      payable
+        override
+        isAuthorizedForToken(tokenId)
+        returns (uint256 amount0, uint256 amount1) {}
+```
+
+Remove the `payable` modifier from the `ILOPool::claim` function.

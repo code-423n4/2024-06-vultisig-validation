@@ -22,7 +22,7 @@ This **refundDeadline** important for ILOPool, because it shows is anyone eligib
 
 ### Marked as QA because there is no damage for the protocol from this attack vector.
 1) Projects with huge Launch date won't be able to be launched anyway.
-2) Such refund shouldn't harm Project admin or users of this project.
+2) Such refund shouldn't harm Project admin or users of this project. Only cause bad user experience.
 
 ## ILOPool **claim()** don't require payable modificator.
 Because don't work with eth but still it can bring an issue for user who can send eth that will stuck there forever.

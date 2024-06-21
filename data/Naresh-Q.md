@@ -31,10 +31,8 @@ This report includes additional instances of an issue listed in the automated fi
 | [[L-25](#l-25)] | Solidity version `0.8.20` may not work on other chains due to `PUSH0` | 4| 
 | [[L-26](#l-26)] | State variables not capped at reasonable values | 7| 
 | [[L-27](#l-27)] | Consider implementing two-step procedure for updating protocol addresses | 8| 
-| [[L-28](#l-28)] | Use of `tx.origin` is unsafe in almost every context | 1| 
-| [[L-29](#l-29)] | Use `Ownable2Step` instead of `Ownable` | 3| 
-| [[L-30](#l-30)] | Using zero as a parameter | 1| 
-| [[L-31](#l-31)] | Some `ERC20` can revert on a zero value `transfer` | 9| 
+| [[L-28](#l-28)] | Using zero as a parameter | 1| 
+| [[L-29](#l-29)] | Some `ERC20` can revert on a zero value `transfer` | 9| 
 
 ### Low Risk Issues
 
@@ -201,7 +199,7 @@ Array entries are added but are never removed. Consider whether this should be t
 
 ### [L-03]<a name="l-03"></a> Execution at deadlines should be allowed
 
-The condition may be wrong in these cases, as when block.timestamp is equal to the compared `>` or `<` variable these blocks will not be executed.
+The condition may be wrong in these cases, as when `block.timestamp` is equal to the compared `>` or `<` variable these blocks will not be executed.
 
 *There are 5 instance(s) of this issue:*
 
@@ -672,79 +670,18 @@ Initializers could be front-run, allowing an attacker to either set their own va
 39:         uint16 platformFee,
 40:         uint16 performanceFee
 41:     ) external override whenNotInitialized() {
-42:         PLATFORM_FEE = platformFee;
-43:         PERFORMANCE_FEE = performanceFee;
-44:         FEE_TAKER = _feeTaker;
-45:         transferOwnership(initialOwner);
-46:         UNIV3_FACTORY = uniV3Factory;
-47:         ILO_POOL_IMPLEMENTATION = iloPoolImplementation;
-48:         WETH9 = weth9;
-49:     }
+
 
 57:     function initProject(InitProjectParams calldata params) external override afterInitialize() returns(address uniV3PoolAddress) {
-58:         uint64 refundDeadline = params.launchTime + DEFAULT_DEADLINE_OFFSET;
-59: 
-60:         PoolAddress.PoolKey memory poolKey = PoolAddress.getPoolKey(params.saleToken, params.raiseToken, params.fee);
-61:         uniV3PoolAddress = _initUniV3PoolIfNecessary(poolKey, params.initialPoolPriceX96);
-62:         
-63:         _cacheProject(uniV3PoolAddress, params.saleToken, params.raiseToken, params.fee, params.initialPoolPriceX96, params.launchTime, refundDeadline);
-64:         emit ProjectCreated(uniV3PoolAddress, _cachedProject[uniV3PoolAddress]);
-65:     }
+
 
 72:     function initILOPool(InitPoolParams calldata params) external override onlyProjectAdmin(params.uniV3Pool) returns (address iloPoolAddress) {
-73:         Project storage _project = _cachedProject[params.uniV3Pool];
-74:         {
-75:             require(_project.uniV3PoolAddress != address(0), "NI");
-76:             // validate time for sale start and end compared to launch time
-77:             require(params.start < params.end && params.end < _project.launchTime, "PT");
-78:             // this salt make sure that pool address can not be represented in any other chains
-79:             bytes32 salt = keccak256(abi.encodePacked(
-80:                 ChainId.get(),
-81:                 params.uniV3Pool,
-82:                 _initializedILOPools[params.uniV3Pool].length
-83:             ));
-84:             iloPoolAddress = Clones.cloneDeterministic(ILO_POOL_IMPLEMENTATION, salt);
-85:             emit ILOPoolCreated(_project.uniV3PoolAddress, iloPoolAddress, _initializedILOPools[params.uniV3Pool].length);
-86:         }
-87: 
-88:         uint160 sqrtRatioLowerX96 = TickMath.getSqrtRatioAtTick(params.tickLower);
-89:         uint160 sqrtRatioUpperX96 = TickMath.getSqrtRatioAtTick(params.tickUpper);
-90:         require(sqrtRatioLowerX96 < _project.initialPoolPriceX96 && sqrtRatioLowerX96 < sqrtRatioUpperX96, "RANGE");
-91: 
-92:         IILOPool.InitPoolParams memory initParams = IILOPool.InitPoolParams({
-93:             uniV3Pool: params.uniV3Pool,
-94:             tickLower: params.tickLower,
-95:             tickUpper: params.tickUpper,
-96:             sqrtRatioLowerX96: sqrtRatioLowerX96,
-97:             sqrtRatioUpperX96: sqrtRatioUpperX96,
-98:             hardCap: params.hardCap,
-99:             softCap: params.softCap,
-100:             maxCapPerUser: params.maxCapPerUser,
-101:             start: params.start,
-102:             end: params.end,
-103:             vestingConfigs: params.vestingConfigs
-104:         });
-105:         IILOPool(iloPoolAddress).initialize(initParams);
-106:         _initializedILOPools[params.uniV3Pool].push(iloPoolAddress);
-107:     }
+
 
 109:     function _initUniV3PoolIfNecessary(PoolAddress.PoolKey memory poolKey, uint160 sqrtPriceX96) internal returns (address pool) {
-110:         pool = IUniswapV3Factory(UNIV3_FACTORY).getPool(poolKey.token0, poolKey.token1, poolKey.fee);
-111:         if (pool == address(0)) {
-112:             pool = IUniswapV3Factory(UNIV3_FACTORY).createPool(poolKey.token0, poolKey.token1, poolKey.fee);
-113:             IUniswapV3Pool(pool).initialize(sqrtPriceX96);
-114:         } else {
-115:             (uint160 sqrtPriceX96Existing, , , , , , ) = IUniswapV3Pool(pool).slot0();
-116:             if (sqrtPriceX96Existing == 0) {
-117:                 IUniswapV3Pool(pool).initialize(sqrtPriceX96);
-118:             } else {
-119:                 require(sqrtPriceX96Existing == sqrtPriceX96, "UV3P");
-120:             }
-121:         }
-122:     }
+
 
 ```
-
 
 *GitHub* : [33](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L33-L49), [57](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L57-L65), [72](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L72-L107), [109](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L109-L122)
 
@@ -752,51 +689,9 @@ Initializers could be front-run, allowing an attacker to either set their own va
 📁 File: src/ILOPool.sol
 
 61:     function initialize(InitPoolParams calldata params) external override whenNotInitialized() {
-62:         _nextId = 1;
-63:         // initialize imutable state
-64:         MANAGER = msg.sender;
-65:         IILOManager.Project memory _project = IILOManager(MANAGER).project(params.uniV3Pool);
-66: 
-67:         WETH9 = IILOManager(MANAGER).WETH9();
-68:         RAISE_TOKEN = _project.raiseToken;
-69:         SALE_TOKEN = _project.saleToken;
-70:         _cachedUniV3PoolAddress = params.uniV3Pool;
-71:         _cachedPoolKey = _project._cachedPoolKey;
-72:         TICK_LOWER = params.tickLower;
-73:         TICK_UPPER = params.tickUpper;
-74:         SQRT_RATIO_LOWER_X96 = params.sqrtRatioLowerX96;
-75:         SQRT_RATIO_UPPER_X96 = params.sqrtRatioUpperX96;
-76:         SQRT_RATIO_X96 = _project.initialPoolPriceX96;
-77: 
-78:         // rounding up to make sure that the number of sale token is enough for sale
-79:         (uint256 maxSaleAmount,) = _saleAmountNeeded(params.hardCap);
-80:         // initialize sale
-81:         saleInfo = SaleInfo({
-82:             hardCap: params.hardCap,
-83:             softCap: params.softCap,
-84:             maxCapPerUser: params.maxCapPerUser,
-85:             start: params.start,
-86:             end: params.end,
-87:             maxSaleAmount: maxSaleAmount
-88:         });
-89: 
-90:         _validateSharesAndVests(_project.launchTime, params.vestingConfigs);
-91:         // initialize vesting
-92:         for (uint256 index = 0; index < params.vestingConfigs.length; index++) {
-93:             _vestingConfigs.push(params.vestingConfigs[index]);
-94:         }
-95: 
-96:         emit ILOPoolInitialized(
-97:             params.uniV3Pool,
-98:             TICK_LOWER,
-99:             TICK_UPPER,
-100:             saleInfo,
-101:             params.vestingConfigs
-102:         );
-103:     }
+
 
 ```
-
 
 *GitHub* : [61](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOPool.sol#L61-L103)
 
@@ -1280,59 +1175,8 @@ A copy-paste error or a typo may end up bricking protocol functionality, or send
 
 *GitHub* : [160](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L160-L160), [164](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L164-L164), [169](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L169-L169)
 
-### [L-28]<a name="l-28"></a> Use of `tx.origin` is unsafe in almost every context
 
-According to Vitalik Buterin, contracts should not assume that `tx.origin` will continue to be usable or meaningful. An example of this is EIP-3074 which explicitly mentions the intention to change its semantics when it's used with new op codes. There have also been calls to remove `tx.origin`, and there are security issues associated with using it for authorization. For these reasons, it's best to completely avoid the feature.
-
-*There are 1 instance(s) of this issue:*
-
-```solidity
-📁 File: src/ILOManager.sol
-
-30:         transferOwnership(tx.origin);
-
-```
-
-
-*GitHub* : [30](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L30-L30)
-
-### [L-29]<a name="l-29"></a> Use `Ownable2Step` instead of `Ownable`
-
-[Ownable2Step](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/3d7a93876a2e5e1d7fe29b5a0e96e222afdc4cfa/contracts/access/Ownable2Step.sol#L31-L56) and [Ownable2StepUpgradeable](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/25aabd286e002a1526c345c8db259d57bdf0ad28/contracts/access/Ownable2StepUpgradeable.sol#L47-L63) prevent the contract ownership from mistakenly being transferred to an address that cannot handle it (e.g. due to a typo in the address), by requiring that the recipient of the owner permissions actively accept via a contract call of its own.
-
-*There are 3 instance(s) of this issue:*
-
-```solidity
-📁 File: hardhat-vultisig/contracts/Vultisig.sol
-
-11: contract Vultisig is ERC20, Ownable {
-
-```
-
-
-*GitHub* : [11](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/hardhat-vultisig/contracts/Vultisig.sol#L11-L11)
-
-```solidity
-📁 File: hardhat-vultisig/contracts/Whitelist.sol
-
-16: contract Whitelist is Ownable {
-
-```
-
-
-*GitHub* : [16](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/hardhat-vultisig/contracts/Whitelist.sol#L16-L16)
-
-```solidity
-📁 File: src/ILOManager.sol
-
-15: contract ILOManager is IILOManager, Ownable, Initializable {
-
-```
-
-
-*GitHub* : [15](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOManager.sol#L15-L15)
-
-### [L-30]<a name="l-30"></a> Using zero as a parameter
+### [L-28]<a name="l-28"></a> Using zero as a parameter
 
 Passing `0` or `0x0` as a function argument can sometimes result in a security issue(e.g. passing zero as the slippage parameter). A historical example is the infamous 0x0 address bug where numerous tokens were lost. This happens because `0` can be interpreted as an uninitialized address, leading to transfers to the `0x0` address, effectively burning tokens. Moreover, `0` as a denominator in division operations would cause a runtime exception. It's also often indicative of a logical error in the caller's code.
 
@@ -1350,7 +1194,7 @@ Consider using a constant variable with a descriptive name, so it's clear that t
 
 *GitHub* : [147](https://github.com/code-423n4/2024-06-vultisig/blob/7fb0da757c98116090f35810146ea742ca3b94da/src/ILOPool.sol#L147-L147)
 
-### [L-31]<a name="l-31"></a> Some `ERC20` can revert on a zero value `transfer`
+### [L-29]<a name="l-29"></a> Some `ERC20` can revert on a zero value `transfer`
 
 In spite of the fact that [EIP-20](https://github.com/ethereum/EIPs/blob/46b9b698815abbfa628cd1097311deee77dd45c5/EIPS/eip-20.md?plain=1#L116) states that zero-valued transfers must be accepted, some tokens, such as `LEND` will revert if this is attempted, which may cause transactions that involve other tokens (such as batch operations) to fully revert. Consider skipping the transfer if the amount is zero, which will also save gas.
 

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "rbserver",
+  "risk": "2",
+  "title": "For initial VULT launch, whitelist logic can apply to non-buy actions, which breaks an invariant",
+  "issueId": 518,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/518"
+}

@@ -164,3 +164,10 @@ In ILOManager.sol, initialize() function below missing access control i.e. only 
         WETH9 = weth9;
     }
 ```
+
+## [L-08] Project creator can bypass refund deadline
+
+THis is by setting time in the past.
+```solidity
+ uint64 refundDeadline = params.launchTime + DEFAULT_DEADLINE_OFFSET;
+```

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "devAnas",
+  "risk": "2",
+  "title": "Whitelist address index can be set to more than max allowed index.",
+  "issueId": 528,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/528"
+}

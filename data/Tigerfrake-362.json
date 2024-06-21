@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Tigerfrake",
+  "risk": "2",
+  "title": "A malicious actor could deposit miniscule `raiseAmount` and mint an `nft` (open a position) for any arbitrary `recipient`",
+  "issueId": 362,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/362"
+}

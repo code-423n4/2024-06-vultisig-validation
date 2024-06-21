@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "cheatc0d3",
+  "risk": "2",
+  "title": "Blocklist Token Disruption in Liquidity Management Contract Leads to Transaction Failures and Gas Losses",
+  "issueId": 664,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/664"
+}

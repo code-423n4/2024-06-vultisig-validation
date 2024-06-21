@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "EaglesSecurity",
+  "risk": "2",
+  "title": "Invalid pool can be initialized",
+  "issueId": 481,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/481"
+}

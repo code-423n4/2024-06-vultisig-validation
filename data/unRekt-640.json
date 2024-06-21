@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "unRekt",
+  "risk": "2",
+  "title": "Using `MANAGER = msg.sender` in `initialize()` function of `ILOPool.sol` , can give Managerial access to anyone who calls the contract leading to weak access control vulnerability.",
+  "issueId": 640,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/640"
+}

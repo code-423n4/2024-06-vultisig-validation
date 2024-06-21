@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "gkrastenov",
+  "risk": "2",
+  "title": "Avoid using of transfer()",
+  "issueId": 668,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/668"
+}

@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "Maushish",
+  "risk": "2",
+  "title": "User wont be able claim his funds due to wrong block.timestamp implementation.",
+  "issueId": 491,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/491"
+}

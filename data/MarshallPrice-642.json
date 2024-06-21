@@ -1,0 +1,8 @@
+{
+  "contest": 393,
+  "handle": "MarshallPrice",
+  "risk": "2",
+  "title": "transfer(...) function in Whitelist(...) can be replaced by a direct call",
+  "issueId": 642,
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/642"
+}

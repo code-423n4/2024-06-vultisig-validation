@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "A malicious user ca grief All Pool launches of any Project due to the strict check of `sqrtPriceX96` in `ILOManager::launch()",
   "issueId": 685,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/685"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/685",
+  "validatedIssueId": 69,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/69"
 }

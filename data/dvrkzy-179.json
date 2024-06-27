@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Non-whitelisted users will still pass the whitelist check ",
   "issueId": 179,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/179"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/179",
+  "validatedIssueId": 171,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/171"
 }

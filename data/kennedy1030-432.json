@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "A `DoS` attack on the launch.",
   "issueId": 432,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/432"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/432",
+  "validatedIssueId": 122,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/122"
 }

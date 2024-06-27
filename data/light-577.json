@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "User can bypass the max user cap",
   "issueId": 577,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/577"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/577",
+  "validatedIssueId": 88,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/88"
 }

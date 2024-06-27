@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Non-whitelisted addresses can also buy liquidity and claim VULT token",
   "issueId": 263,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/263"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/263",
+  "validatedIssueId": 151,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/151"
 }

@@ -4,5 +4,7 @@
   "risk": "Q",
   "title": "QA Report",
   "issueId": 445,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/445"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/445",
+  "validatedIssueId": 205,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/205"
 }

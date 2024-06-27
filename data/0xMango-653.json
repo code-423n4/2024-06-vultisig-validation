@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Denial of service built in the ILOPool.launch function because of the likelyness of it reaching the gas limit.",
   "issueId": 653,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/653"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/653",
+  "validatedIssueId": 75,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/75"
 }

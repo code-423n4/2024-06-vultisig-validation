@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "0 slippage for pool launch could lead to DoS",
   "issueId": 22,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/22"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/22",
+  "validatedIssueId": 201,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/201"
 }

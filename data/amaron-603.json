@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "a big number of pools will make a protocol unlaunchable and will lock the `SaleTokens` forever",
   "issueId": 603,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/603"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/603",
+  "validatedIssueId": 85,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/85"
 }

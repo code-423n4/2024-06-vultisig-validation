@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "_allowedWhitelistIndex and Blacklisted Users",
   "issueId": 411,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/411"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/411",
+  "validatedIssueId": 127,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/127"
 }

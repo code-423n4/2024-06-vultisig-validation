@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "DoS attack making projects unable to launch",
   "issueId": 133,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/133"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/133",
+  "validatedIssueId": 179,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/179"
 }

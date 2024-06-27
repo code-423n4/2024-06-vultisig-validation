@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "The `_initializedILOPools`array is unbounded this can lead to a DOS in the system.",
   "issueId": 441,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/441"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/441",
+  "validatedIssueId": 120,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/120"
 }

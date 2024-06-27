@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Launch depends on the uniswap pool state to work. This function will fail if there's already circulating supply and people can trade",
   "issueId": 515,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/515"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/515",
+  "validatedIssueId": 109,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/109"
 }

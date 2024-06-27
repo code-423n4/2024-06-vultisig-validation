@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "ProjectAdmin can DOS `IloManager.launch()` by creating multiple ILO pools causing the for loop to run out of gas and revert",
   "issueId": 544,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/544"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/544",
+  "validatedIssueId": 101,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/101"
 }

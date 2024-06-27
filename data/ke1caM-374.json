@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Pool cannot launch with particular amount of investors.",
   "issueId": 374,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/374"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/374",
+  "validatedIssueId": 133,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/133"
 }

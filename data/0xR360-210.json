@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Anyone can buy tokens, without being within the whitelist",
   "issueId": 210,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/210"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/210",
+  "validatedIssueId": 164,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/164"
 }

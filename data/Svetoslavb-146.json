@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "### [M-03] A project cannot launch pools if one pool does not meet the sale soft cap leading to DoS of a project",
   "issueId": 146,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/146"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/146",
+  "validatedIssueId": 66,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/66"
 }

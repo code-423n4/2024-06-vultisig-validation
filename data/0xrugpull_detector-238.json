@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Whitelist check can be bypassed by any non-whitelisted address because it does not check if `to` is in whiltelist.",
   "issueId": 238,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/238"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/238",
+  "validatedIssueId": 159,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/159"
 }

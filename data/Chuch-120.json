@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Hard-coded 5% slippage isn't optimal",
   "issueId": 120,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/120"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/120",
+  "validatedIssueId": 182,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/182"
 }

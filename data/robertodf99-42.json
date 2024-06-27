@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Missing null value check allows not whilisted users to buy VULT tokens from the pool",
   "issueId": 42,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/42"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/42",
+  "validatedIssueId": 195,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/195"
 }

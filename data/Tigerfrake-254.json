@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`launch()` may fail due to potential OOG error",
   "issueId": 254,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/254"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/254",
+  "validatedIssueId": 154,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/154"
 }

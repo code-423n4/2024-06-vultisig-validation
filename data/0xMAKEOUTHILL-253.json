@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Whitelist doesn't work as intended",
   "issueId": 253,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/253"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/253",
+  "validatedIssueId": 155,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/155"
 }

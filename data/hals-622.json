@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`Whitelist._maxAddressCap` can be bypassed when claiming `$VULT` tokens",
   "issueId": 622,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/622"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/622",
+  "validatedIssueId": 221,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/221"
 }

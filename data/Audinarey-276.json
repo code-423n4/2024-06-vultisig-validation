@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "`feeTaker` can receive more than actual fees when `claim(...)` is called",
   "issueId": 276,
-  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/276"
+  "issueUrl": "https://github.com/code-423n4/2024-06-vultisig-validation/issues/276",
+  "validatedIssueId": 226,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-06-vultisig-findings/issues/226"
 }
